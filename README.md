@@ -1,31 +1,30 @@
 # Architecture-Computer-Systems
 
-## **Opis:**
-Architecture-Computer-Systems to repozytorium poświęcone architekturze systemów komputerowych. Znajdziesz tutaj przykładowe projekty, dokumentację i materiały edukacyjne związane z projektowaniem i analizą architektury systemów komputerowych.
+## **Description:**
+Architecture-Computer-Systems is a repository dedicated to the architecture of computer systems. Here you will find example projects, documentation and educational materials related to the design and analysis of computer systems architecture.
 
-## **Struktura Repozytorium:**
-/Projekty: Ten folder zawiera różne projekty, w których skupia się na projektowaniu i implementacji architektury systemów komputerowych. Każdy projekt posiada swój własny folder z opisem, plikami projektowymi i kodem źródłowym.
+## **Repository Structure:**
+/Projects: This folder contains various projects where it focuses on the design and implementation of computer systems architecture. Each project has its own folder with description, project files and source code.
 
-/Dokumentacja: W tym folderze znajduje się dokumentacja techniczna, prezentacje i artykuły dotyczące architektury systemów komputerowych.
+/Documentation: This folder contains technical documentation, presentations, and articles about computer systems architecture.
 
-/Materiały edukacyjne: Tutaj znajdziesz różne materiały edukacyjne, takie jak wykłady, kursy i podręczniki, które pomogą Ci zrozumieć i rozwijać wiedzę na temat architektury systemów komputerowych.
+/Educational materials: Here you will find various educational materials such as lectures, courses and manuals to help you understand and develop your knowledge of computer systems architecture.
 
-## **Jak zacząć:**
+## **How ​​to start:**
 
-Sklonuj repozytorium na swój lokalny komputer:
+Clone the repository to your local computer:
 ```
-git clone https://github.com/twojenazwauzytkownika/Architecture-Computer-Systems.git
+git clone https://github.com/yourusername/Architecture-Computer-Systems.git
 ```
 
-Przeglądaj dostępne projekty, dokumentację i materiały w odpowiednich folderach.
+Browse available projects, documentation and materials in their respective folders.
 
-Wykorzystaj dostępne zasoby i narzędzia, aby projektować, analizować i implementować architekturę systemów komputerowych.
+Use available resources and tools to design, analyze and implement the architecture of computer systems.
 
-## **Wymagania systemowe**
-Aby rozpocząć pracę z architekturą systemów komputerowych, będziesz potrzebować narzędzi do projektowania i analizy systemów komputerowych, takich jak oprogramowanie do rysowania diagramów, narzędzia do symulacji architektury lub narzędzia do analizy wydajności. Upewnij się, że masz zainstalowane wymagane oprogramowanie zgodnie z preferencjami i potrzebami projektu.
+## **System requirements**
+To get started with computer systems architecture, you will need computer systems design and analysis tools such as diagramming software, architecture simulation tools, or performance analysis tools. Make sure you have the required software installed according to your project preferences and needs.
 
-## **Wkład i Wsparcie**
-Jeśli chcesz przyczynić się do tego repozytorium, możesz zgłaszać problemy, tworzyć pull requesty lub udostępniać swoje własne projekty związane z architekturą systemów komputerowych. Wszelkie wkłady są mile widziane!
+## **Contributions and Support**
+If you want to contribute to this repository, you can report issues, create pull requests, or share your own computer systems architecture projects. Any contributions are welcome!
 
-Jeśli masz pytania lub potrzebujesz pomocy, skontaktuj się ze mną poprzez e-mail lub przez platformę GitHub.
-
+If you have any questions or need help, please contact me via email or GitHub.
