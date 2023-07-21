@@ -6,9 +6,7 @@ Architecture-Computer-Systems is a repository dedicated to the architecture of c
 ## **Repository Structure:**
 /Projects: This folder contains various projects where it focuses on the design and implementation of computer systems architecture. Each project has its own folder with description, project files and source code.
 
-/Documentation: This folder contains technical documentation, presentations, and articles about computer systems architecture.
-
-/Educational materials: Here you will find various educational materials such as lectures, courses and manuals to help you understand and develop your knowledge of computer systems architecture.
+/Labs: This folder contains technical documentation, presentations, and articles about computer systems architecture.
 
 ## **How ​​to start:**
 
