@@ -109,7 +109,7 @@ bytes = 004 001 000 000
 
 Sprawdź na terminalu Linux w jakiej architekturze pracuje twój procesor.
 
-## [Zad. 1.14]()https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/endian.c
+## [Zad. 1.14](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/endian.c)
 
 Napisz program `endian` rozpoznający w jakiej architekturze pracuje procesor.
 
