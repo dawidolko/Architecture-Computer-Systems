@@ -1,0 +1,8 @@
+little-endian
+
+p -> [5][0][0][0]   *p = 5
+
+big-endian
+
+p -> [0][0][0][5]   *p = 5
+
