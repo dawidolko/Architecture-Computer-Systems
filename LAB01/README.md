@@ -1,12 +1,12 @@
 # Laboratorium 1
 
-## Zad. 1.1
+## [Zad. 1.1](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/size.c)
 
 Napisz program `size` sprawdzający, ile bajtów zajmują typy: char, short, int, long, long int, long long oraz float, double, long double.
 
 [link](https://en.wikipedia.org/wiki/C_data_types)
 
-## Zad. 1.2 *
+## [Zad. 1.2 *](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/size2.c)
 
 Napisz program `size2` sprawdzający, ile bajtów zajmują typy: char, short, int, long, long int i long long bez znaku.
 
@@ -44,11 +44,11 @@ Która z poniższych odpowiedzi jest fałszywa:
 
 Jaki obszar pamięci można zaadresować przy pomocy adresów 16, 20, 24, 32, 40, 48 i 64 bitowych? 2^(liczba adresów)
 
-## Zad. 1.7
+## [Zad. 1.7](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/bits.c)
 
 Napisz program `bits` rozpoznający do ilu bitowego kodu został skompilowany.
 
-## Zad. 1.8
+## [Zad. 1.8](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/sposoby.txt)
 
 Załóżmy, że typ int zajmuje 4 bajty. Na ile sposobów można umieścić w pamięci pod adresem p wartość 1 typu int? Zadanie rozwiąż w pliku `sposoby.txt`.
 
@@ -56,7 +56,7 @@ Załóżmy, że typ int zajmuje 4 bajty. Na ile sposobów można umieścić w pa
 p -> [ ][ ][ ][ ]   *p = 1
 ```
 
-## Zad. 1.9
+## [Zad. 1.9](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/endian.txt)
 
 Procesory w architekturze little-endian zapisują dane w pamięci od lewej do prawej zaczynając od najmłodszego bajtu (LSB – least significant byte). Procesory w architekturze big-endian zapisują dane w pamięci od lewej do prawej zaczynając od najstarszego bajtu (MSB – most significant byte).  Załóżmy, że pod adresem p znajduje się liczba 5 typu int. W pliku `endian.txt` wypełnij komórki pamięci odpowiednimi wartościami dla obu architektur.
 
@@ -70,7 +70,7 @@ big-endian
 p -> [ ][ ][ ][ ]   *p = 5
 ```
 
-## Zad. 1.10
+## [Zad. 1.10](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/sposoby.txt)
 
 W pliku `szereg.txt` rozwiń w szereg i wyznacz wartości dziesiętne dla liczb: 
 
@@ -83,7 +83,7 @@ W pliku `szereg.txt` rozwiń w szereg i wyznacz wartości dziesiętne dla liczb:
 3A5B  – liczba szesnastkowa *
 ```
 
-## Zad. 1.11
+## [Zad. 1.11](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/260.txt)
 
 Załóżmy, że pod adresem p znajduje się liczba 260 typu int. Wypełnij komórki pamięci odpowiednimi wartościami dla obu architektur. Zadanie rozwiąż w pliku `260.txt`.
 
@@ -97,7 +97,7 @@ big-endian
 p -> [ ][ ][ ][ ]   *p = 260
 ```
 
-## Zad. 1.12
+## [Zad. 1.12](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/bytes.c)
 
 Napisz program `bytes` wypisujący reprezentację bajtową dla podanej liczby x typu int. Przykładowa sesja:
 
@@ -109,10 +109,10 @@ bytes = 004 001 000 000
 
 Sprawdź na terminalu Linux w jakiej architekturze pracuje twój procesor.
 
-## Zad. 1.14
+## [Zad. 1.14]()https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/endian.c
 
 Napisz program `endian` rozpoznający w jakiej architekturze pracuje procesor.
 
-## Zad. 1.15 *
+## [Zad. 1.15 *](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB01/endian2.c)
 
 Napisz program `endian2` wypisujący little-endian architecture lub big-endian architecture w zależności od architektury, w której pracuje procesor.
