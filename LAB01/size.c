@@ -17,7 +17,5 @@ int main(){
     printf("Rozmiar double: %d\n", sizeof(double));
     printf("Rozmiar long double: %d\n", sizeof(long double));
     
-    printf("\n");
-    
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void endian() {
 	int i = 1;
@@ -8,7 +9,10 @@ void endian() {
 }
 
 int main() {
+	printf("endian.c\n\n");
+
     endian();
+
     return 0;
 }
 

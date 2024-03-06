@@ -1,5 +1,5 @@
-
 #include <stdio.h>
+#include <stdlib.h>
 
 void bytes() {
 	int number;
@@ -25,7 +25,10 @@ void bytes() {
 }
 
 int main() {
+	printf("bytes.c\n\n");
+
     bytes();
+
     return 0;
 }
 
