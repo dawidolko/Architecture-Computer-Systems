@@ -1,6 +1,6 @@
 # Laboratorium 3
 
-## [Zad. 3.1]()
+## [Zad. 3.1](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB03/char.asm)
 
 1. Zainstaluj program `Embarcadero_Dev-Cpp_6.3_TDM-GCC 9.2_Setup.exe`
 
@@ -30,7 +30,7 @@ file asmloader
 run char
 q
 ```
-## [Zad. 3.2]()
+## [Zad. 3.2](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB03/char.asm)
 
 Prześledź wynik uruchomienia programu char.asm. 
 
@@ -58,7 +58,7 @@ push 0 i call [ebx+0*4]: Wywołuje funkcję exit z argumentem 0, kończąc dzia�
 Wynik działania tego programu to wyświetlenie znaku 'H' na ekranie, a następnie zakończenie pracy z kodem wyjścia 0.
 ```
 
-## [Zad. 3.3]()
+## [Zad. 3.3](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB03/char.asm)
 
 Prześledź wynik działania deasemblera dla programu char.asm.
 ```
@@ -117,7 +117,7 @@ Trzecia kolumna to mnemonik instrukcji wraz z jej operandami, czyli bardziej zro
 
 - czy instrukcja call [ebx+0*4] ma kod argumentu? * `Ma kod 00.`
 
-## [Zad. 3.4]()
+## [Zad. 3.4](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB03/printf1.asm)
 
 Napisz program `printf.asm` wypisujący napis `Hello world!` przy pomocy API asmloadera.
 
@@ -136,7 +136,7 @@ Napisz program `printf.asm` wypisujący napis `Hello world!` przy pomocy API asm
 
 - jaką wartość na stosie ma format ? `Adres komórki pamięci.`
 
-## [Zad. 3.5]()
+## [Zad. 3.5](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB03/printf2.asm)
 
 Napisz program, który przy pomocy asmloader api:
 
@@ -160,7 +160,7 @@ Wskazówka do dwóch ostatnich zadań:
 
 Umieść liczbę `a` i napis `a = w` jednolitym/spójnym obszarze pamięci.
 
-## [Zad. 3.6]()
+## [Zad. 3.6](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB03/add.asm)
 
 Napisz program, który przy pomocy asmloader api:
 
@@ -176,7 +176,7 @@ Napisz program, który przy pomocy asmloader api:
 
 `sub3.asm` – odejmuje od wartości `a` w rejestrze `eax` liczbę `b` z pamięci i wypisuje wynik *
 
-## [Zad. 3.7]()
+## [Zad. 3.7](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB03/adc.asm)
 
 Napisz program ilustrujący działanie instrukcji dodawania z przeniesieniem adc (add with carry) kolejno ze zgaszoną i ustawioną flagą CF. Instrukcja clc (clear carry flag) gasi flagę CF. Instrukcja stc (set carry flag) ustawia flagę CF.
 
@@ -186,7 +186,7 @@ Napisz program ilustrujący działanie instrukcji dodawania z przeniesieniem adc
 
 **Uwaga: oba programy mają wyświetlać po dwa wyniki.**
 
-## [Zad. 3.8 *]()
+## [Zad. 3.8 *](https://github.com/dawidolko/Architecture-Computer-Systems/blob/main/LAB03/sbb.asm)
 
 Napisz program ilustrujący działanie instrukcji odejmowania z pożyczką sbb (subtract with borrow) kolejno ze zgaszoną i ustawioną flagą CF. Instrukcja clc (clear carry flag) gasi flagę CF. Instrukcja stc (set carry flag) ustawia flagę CF.
 
