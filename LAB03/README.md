@@ -32,20 +32,31 @@ q
 ```
 ## [Zad. 3.2]()
 
-Prześledź wynik uruchomienia programu char.asm. Przykładowa sesja:
+Prześledź wynik uruchomienia programu char.asm. 
+
+Przykładowa sesja: 
 ```
 Simplified Assembly Loader v.0.0.1 by gynvael.coldwind//vx
 Code loaded at 0x002c0100 (12 bytes)
 H
 ```
 
-- pod jaki adres logiczny został załadowany ten program?
+- pod jaki adres logiczny został załadowany ten program? `0x00140100`
 
-- ile bajtów zajmuje ten addres logiczny?
+- ile bajtów zajmuje ten addres logiczny? `32-bitowym, jakim jest tutaj sugerowany ([bits 32]), zajmuje 4 bajty.`
 
-- ile bajtów w pamięci zajmuje ten program?
+- ile bajtów w pamięci zajmuje ten program?  `12 bajtów` `"Code loaded at 0x002c0100 (12 bytes)".` 
 
 - jaki jest wynik działania tego programu?
+```
+Program wykonuje następujące czynności:
+
+push 'H': Na stos wrzucany jest znak 'H' (zapisany jako 32-bitowa wartość z 'H' na najmniej znaczącym bajcie i zerami na pozostałych bajtach).
+call [ebx+1*4]: Wywołuje funkcję putchar (dostępną pod drugim indeksem tablicy API, co wynika z ebx+4), która wypisuje znak 'H' na standardowe wyjście.
+add esp, 4: Zdejmuje wartość ze stosu, korygując wskaźnik stosu esp o 4 bajty w górę, aby usunąć przekazany argument.
+push 0 i call [ebx+0*4]: Wywołuje funkcję exit z argumentem 0, kończąc działanie programu z kodem powrotu 0.
+Wynik działania tego programu to wyświetlenie znaku 'H' na ekranie, a następnie zakończenie pracy z kodem wyjścia 0.
+```
 
 ## [Zad. 3.3]()
 
@@ -59,66 +70,71 @@ Prześledź wynik działania deasemblera dla programu char.asm.
 ```
 
 - co przechowuje pierwsza, druga i trzecia kolumna w powyższym listingu?
+```
+Pierwsza kolumna to adres offsetu instrukcji względem początku segmentu kodu. W rzeczywistości jest to liczba heksadecymalna reprezentująca, gdzie w pamięci zaczyna się dana instrukcja.
+Druga kolumna to kod maszynowy instrukcji – ciąg bajtów, które procesor interpretuje jako konkretną operację do wykonania.
+Trzecia kolumna to mnemonik instrukcji wraz z jej operandami, czyli bardziej zrozumiała reprezentacja kodu maszynowego dla programisty.
+```
 
-- jaki adres ma instrukcja push 'H' ?
+- jaki adres ma instrukcja push 'H' ? `00000000`
 
-- ile bajtów ma instrukcja push 'H' ?
+- ile bajtów ma instrukcja push 'H' ? `2 bajty`
 
-- jaki kod rozkazu ma instrukcja push 'H' ?
+- jaki kod rozkazu ma instrukcja push 'H' ? `6A48`
 
-- jaki kod ASCI ma literka 'H' ?
-
-
-- jaki adres ma instrukcja call [ebx+1*4] ?
-
-- ile bajtów ma instrukcja call [ebx+1*4] ?
-
-- jaki kod rozkazu ma instrukcja call [ebx+1*4] ?
-
-- ile bajtów zajmuje kod rozkazu instrukcji call [ebx+1*4] ?
-
-- jaki kod ma argument instrukcji call [ebx+1*4] ?
+- jaki kod ASCI ma literka 'H' ? `0x48 (w ASCII, litera 'H' ma kod 72, co w systemie heksadecymalnym to 48)`
 
 
-- jaki adres ma instrukcja add esp, 4 ? *
+- jaki adres ma instrukcja call [ebx+1*4] ? `00000002`
 
-- ile bajtów ma instrukcja add esp, 4 ? *
+- ile bajtów ma instrukcja call [ebx+1*4] ? `3 bajty`
 
-- jaki kod rozkazu ma instrukcja add esp, 4 ? *
+- jaki kod rozkazu ma instrukcja call [ebx+1*4] ? `FF5304`
+ 
+- ile bajtów zajmuje kod rozkazu instrukcji call [ebx+1*4] ? `3 bajt`
 
-- ile bajtów zajmuje kod rozkazu instrukcji add esp, 4 ? *
-
-- jaki kod ma argument instrukcji add esp, 4 ? *
+- jaki kod ma argument instrukcji call [ebx+1*4] ? `53 04 (reprezentuje [ebx+0x4])`
 
 
-- jaki adres ma instrukcja call [ebx+0*4] ? *
+- jaki adres ma instrukcja add esp, 4 ? * `00000005`
 
-- ile bajtów ma instrukcja call [ebx+0*4] ? *
+- ile bajtów ma instrukcja add esp, 4 ? * `3 bajty`
 
-- jaki kod rozkazu ma instrukcja call [ebx+0*4] ? *
+- jaki kod rozkazu ma instrukcja add esp, 4 ? * `83C404`
 
-- ile bajtów zajmuje kod rozkazu instrukcji call [ebx+0*4] ? *
+- ile bajtów zajmuje kod rozkazu instrukcji add esp, 4 ? * `3 bajt`
 
-- czy instrukcja call [ebx+0*4] ma kod argumentu? *
+- jaki kod ma argument instrukcji add esp, 4 ? * `C4 04 (reprezentuje esp, byte +0x4)`
+
+
+- jaki adres ma instrukcja call [ebx+0*4] ? * `00000008`
+
+- ile bajtów ma instrukcja call [ebx+0*4] ? * `2 bajty`
+
+- jaki kod rozkazu ma instrukcja call [ebx+0*4] ? * `Ten kod to 6A00.`
+
+- ile bajtów zajmuje kod rozkazu instrukcji call [ebx+0*4] ? * `Zajmuje 2 bajty.`
+
+- czy instrukcja call [ebx+0*4] ma kod argumentu? * `Ma kod 00.`
 
 ## [Zad. 3.4]()
 
-Napisz program printf.asm wypisujący napis `Hello world!` przy pomocy API asmloadera.
+Napisz program `printf.asm` wypisujący napis `Hello world!` przy pomocy API asmloadera.
 
-- jaki adres ma instrukcja `call getaddr` ?
+- jaki adres ma instrukcja `call getaddr` ? `00000000.`
 
-- ile bajtów ma instrukcja `call getaddr` ?
+- ile bajtów ma instrukcja `call getaddr` ? `Ma 5 bajty.`
 
-- jaki kod rozkazu ma instrukcja `call getaddr` ?
+- jaki kod rozkazu ma instrukcja `call getaddr` ? `Kod rozkazu to E80E000000.`
 
-- ile bajtów ma argument instrukcji `call getaddr` ?
+- ile bajtów ma argument instrukcji `call getaddr` ? `Argument ma 4 bajty.`
 
 
-- co przechowuje etykieta format ?
+- co przechowuje etykieta format ? `Etykieta format przechowuje adres do miejsca w kodzie.`
 
-- jaką wartość ma etykieta format ?
+- jaką wartość ma etykieta format ? `Jej wartość to ciąg znaków "Hello World!".`
 
-- jaką wartość na stosie ma format ?
+- jaką wartość na stosie ma format ? `Adres komórki pamięci.`
 
 ## [Zad. 3.5]()
 
