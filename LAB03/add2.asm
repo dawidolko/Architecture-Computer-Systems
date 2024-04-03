@@ -3,28 +3,28 @@
 ;        esp -> [ret]  ; ret - adres powrotu do asmloader
 
 a        equ 3
-b        equ 6
+b        equ -6
 
          mov eax, a  ; eax = a
-         add eax, b  ; eax = eax + b
+         add eax, b  ; eax = eax + b = a + b
 
-         push eax
+         push eax  ; eax -> stack
 
 ;        esp -> [eax][ret]
 
-         call wypisz
+         call getaddr  ; push on the stack the run-time address of format and jump to getaddr
 format:
          db "suma = %d", 0xA, 0
-wypisz:
+getaddr:
 
 ;        esp -> [format][eax][ret]
 
-         call [ebx+3*4]  ; printf("suma = %d\n", eax);
+         call [ebx+3*4]  ; printf(format, eax);
          add esp, 2*4    ; esp = esp + 8
 
 ;        esp -> [ret]
 
-         push 0          ; esp -> [0][ret]
+         push 0          ; esp -> [00 00 00 00][ret]
          call [ebx+0*4]  ; exit(0);
 
 ; asmloader API
@@ -47,3 +47,15 @@ wypisz:
 ; Po wywolaniu funkcji sciagamy argumenty ze stosu.
 ;
 ; https://gynvael.coldwind.pl/?id=387
+
+%ifdef COMMENT
+
+Tablica API
+
+ebx    -> [ ][ ][ ][ ] -> exit
+ebx+4  -> [ ][ ][ ][ ] -> putchar
+ebx+8  -> [ ][ ][ ][ ] -> getchar
+ebx+12 -> [ ][ ][ ][ ] -> printf
+ebx+16 -> [ ][ ][ ][ ] -> scanf
+
+%endif

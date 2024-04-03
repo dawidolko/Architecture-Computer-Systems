@@ -1,0 +1,66 @@
+
+Zad. 3.2
+1. Pod adres 0x00140100.
+2. Zajmuje 4 bajty.
+3. Zajmuje 12 bajtów.
+4. Program wyświetla znak 'H'.
+
+
+Zad. 3.3
+1. Pierwsza kolumna pokazuję wagę programu. Druga wypisane komendy zamienione na kod szesnastkowy. Ostatnia z kolumn pokazuje polecenia asemblera.
+
+2. Ma adres 00000000.
+3. Ma 2 bajty.
+4. Ten kod to 6A48.
+5. Ma kod 72.
+
+6. Ma adres 00000002.
+7. Ma 3 bajty.
+8. Ten kod to FF53.
+9. Zajmuje 3 bajty.
+10. Ma kod 04.
+
+11. Ma adres 00000005.
+12. Ma 3 bajty.
+13. Ten kod to 83C404.
+14. Zajmuje 3 bajty.
+15. Ma kod C404.
+
+16. Ma adres 00000008.
+17. Ma 2 bajty.
+18. Ten kod to 6A00.
+19. Zajmuje 2 bajty.
+20. Ma kod 00.
+
+
+Zad. 3.4
+1. Ma adres 00000000.
+2. Ma 5 bajty.
+3. Kod rozkazu to E80E000000.
+4. Argument ma 4 bajty.
+5. Etykieta format przechowuje adres do miejsca w kodzie.
+6. Jej wartość to ciąg znaków "Hello World!".
+7. Adres komórki pamięci.
+
+1.1 kolumnie
+2.10 kolumnie
+3.0
+
+Zad. 3.5
+W plikach .asm.
+
+
+Zad. 3.6
+W plikach .asm.
+
+
+Zad. 3.7
+W plikach .asm.
+
+
+Zad. 3.8
+W plikach .asm.
+
+
+Zad. 3.7
+W plikach .asm.
